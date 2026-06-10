@@ -4,7 +4,7 @@ const API_BASE = "https://api.spotify.com/v1";
 const ENDPOINTS = {
   "currently-playing": "/me/player/currently-playing",
   "recently-played": "/me/player/recently-played?limit=15",
-  "top-tracks": "/me/top/tracks?limit=10&time_range=short_term",
+  "top-tracks": "/me/top/tracks?limit=10&time_range=medium_term",
 };
 
 async function getAccessToken() {
