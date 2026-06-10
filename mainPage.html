@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/images/henryLogo.png"
+    />
+    <title>Home</title>
+
+    <meta
+      name="description"
+      content="Henry Hieu Nguyen — CS student at University of Houston. Full-stack developer building fast, clean web apps. Based in Houston, TX."
+    />
+    <meta name="author" content="Henry Hieu Nguyen" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://single-page-developer-portfolio-nu.vercel.app/mainPage.html"
+    />
+    <meta
+      property="og:title"
+      content="Henry Hieu Nguyen — Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="CS student at University of Houston. Building fast, clean web apps — from pixel-perfect frontends to solid backends."
+    />
+    <meta
+      property="og:image"
+      content="https://single-page-developer-portfolio-nu.vercel.app/starter-code/assets/images/profile-picture.JPG"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Henry Hieu Nguyen — Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="CS student at University of Houston. Building fast, clean web apps."
+    />
+    <meta
+      name="twitter:image"
+      content="https://single-page-developer-portfolio-nu.vercel.app/starter-code/assets/images/profile-picture.JPG"
+    />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+    <header class="header">
+      <p class="header__name">Henry Hieu Nguyen</p>
+      <div class="header__nav">
+        <button class="activities-btn">
+          <a href="./experiencePage.html">Experience</a>
+        </button>
+        <button class="activities-btn">
+          <a href="./educationPage.html">Education</a>
+        </button>
+        <button class="activities-btn">
+          <a href="./activitiesPage.html">Activities</a>
+        </button>
+        <a href="./Henry-Nguyen-Resume-2026.pdf" download class="resume-btn"
+          >&#8595; Resume</a
+        >
+      </div>
+      <div class="header__right">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle color theme"
+        >
+          <svg
+            class="icon-sun"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg
+            class="icon-moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <div class="header__social">
+          <a
+            class="social-btn"
+            href="https://github.com/hieunguyen601"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./starter-code/assets/images/icon-github.svg"
+              alt="github"
+            />
+          </a>
+          <a
+            class="social-btn"
+            href="https://www.linkedin.com/in/henry-nguyen-37a588252/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./starter-code/assets/images/icon-linkedin.svg"
+              alt="linkedin"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-page">
+      <div class="intro">
+        <div class="henry-infor">
+          <h1 class="intro__greeting">Nice to meet you!</h1>
+          <h1 class="intro__name">
+            I'm <span id="myName">Henry Hieu Nguyen.</span>
+          </h1>
+          <p class="intro__description">
+            Based in Houston, Texas. CS student at the University of Houston
+            with hands-on experience in full-stack development, and IT. I turn
+            ideas into real products and I care deeply about the details that
+            make them great.
+          </p>
+          <button class="btn-contact">
+            <a id="form-link" href="#form">Contact Me</a>
+          </button>
+        </div>
+        <div class="hero-image"></div>
+        <img
+          id="profilePicture"
+          src="./starter-code/assets/images/profile-picture.JPG"
+          alt="profile picture"
+        />
+      </div>
+
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <div class="stat-num-wrap">
+            <span class="stat-num" data-target="3">0</span
+            ><span class="stat-suffix">+</span>
+          </div>
+          <p class="stat-label">Internships</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num-wrap">
+            <span class="stat-num" data-target="4">0</span
+            ><span class="stat-suffix">+</span>
+          </div>
+          <p class="stat-label">Years Coding</p>
+        </div>
+      </div>
+
+      <div class="divider reveal"></div>
+      <h1 class="skills-title reveal">Skills</h1>
+      <div class="skills reveal">
+        <img src="./starter-code/assets/images/HtmlLogo.png" alt="HTML" />
+        <img src="./starter-code/assets/images/CssLogo.png" alt="CSS" />
+        <img
+          src="./starter-code/assets/images/javascriptLogo.png"
+          alt="JavaScript"
+        />
+        <img src="./starter-code/assets/images/React.png" alt="React" />
+        <img src="./starter-code/assets/images/nodeJs.png" alt="NodeJS" />
+        <img src="./starter-code/assets/images/pythonLogo.png" alt="Python" />
+      </div>
+
+      <h1 class="projects-title reveal">Projects</h1>
+      <div class="proj-filters reveal">
+        <button type="button" class="proj-filter-btn active" data-filter="all">
+          All
+        </button>
+        <button type="button" class="proj-filter-btn" data-filter="javascript">
+          JavaScript
+        </button>
+        <button type="button" class="proj-filter-btn" data-filter="react">
+          React
+        </button>
+      </div>
+      <div class="projects">
+        <div class="project reveal" data-tech="html css javascript">
+          <div class="project-img-wrap">
+            <a
+              href="https://hieunguyen601.github.io/Expenses-chart-component/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="expensesChart"
+                src="./starter-code/assets/images/expressTrack.png"
+                alt="Expenses Chart"
+              />
+            </a>
+            <div class="project-overlay">
+              <p class="project-overlay__desc">
+                Responsive bar chart app visualizing weekly spending — built
+                from scratch with no chart library.
+              </p>
+              <div class="project-overlay__links">
+                <a
+                  href="https://hieunguyen601.github.io/Expenses-chart-component/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn"
+                  >Live ↗</a
+                >
+                <a
+                  href="https://github.com/hieunguyen601/Expenses-chart-component"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn proj-ov-btn--outline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="project__title">Expenses Chart</p>
+          <p class="project__tech">HTML CSS JAVASCRIPT</p>
+        </div>
+        <div class="project reveal" data-tech="html css react">
+          <div class="project-img-wrap">
+            <a
+              href="https://hieunguyen601.github.io/Weather-App-React-Project/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="weatherApp"
+                src="./starter-code/assets/images/weatherApp.png"
+                alt="Weather App"
+              />
+            </a>
+            <div class="project-overlay">
+              <p class="project-overlay__desc">
+                Real-time weather dashboard with city search and live API data,
+                built with React.
+              </p>
+              <div class="project-overlay__links">
+                <a
+                  href="https://hieunguyen601.github.io/Weather-App-React-Project/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn"
+                  >Live ↗</a
+                >
+                <a
+                  href="https://github.com/hieunguyen601/Weather-App-React-Project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn proj-ov-btn--outline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="project__title">Weather App</p>
+          <p class="project__tech">HTML CSS REACT</p>
+        </div>
+        <div class="project reveal" data-tech="html css javascript">
+          <div class="project-img-wrap">
+            <a
+              href="https://hieunguyen601.github.io/recipes-finder-website/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="recipeFinder"
+                src="./starter-code/assets/images/recipeFinder.png"
+                alt="Recipe Finder"
+              />
+            </a>
+            <div class="project-overlay">
+              <p class="project-overlay__desc">
+                Search and discover recipes by ingredient using a live recipe
+                API with dynamic filtering.
+              </p>
+              <div class="project-overlay__links">
+                <a
+                  href="https://hieunguyen601.github.io/recipes-finder-website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn"
+                  >Live ↗</a
+                >
+                <a
+                  href="https://github.com/hieunguyen601/recipes-finder-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn proj-ov-btn--outline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="project__title">Recipe Finder</p>
+          <p class="project__tech">HTML CSS JAVASCRIPT</p>
+        </div>
+        <div class="project reveal" data-tech="html css javascript">
+          <div class="project-img-wrap">
+            <a
+              href="https://hieunguyen601.github.io/Job-listings-with-filtering/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="jobListing"
+                src="./starter-code/assets/images/jobListing.png"
+                alt="Job Listing"
+              />
+            </a>
+            <div class="project-overlay">
+              <p class="project-overlay__desc">
+                Interactive job board with real-time multi-tag filtering by tech
+                stack.
+              </p>
+              <div class="project-overlay__links">
+                <a
+                  href="https://hieunguyen601.github.io/Job-listings-with-filtering/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn"
+                  >Live ↗</a
+                >
+                <a
+                  href="https://github.com/hieunguyen601/Job-listings-with-filtering"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn proj-ov-btn--outline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="project__title">Job Listing</p>
+          <p class="project__tech">HTML CSS JAVASCRIPT</p>
+        </div>
+        <div class="project reveal" data-tech="html css javascript">
+          <div class="project-img-wrap">
+            <a
+              href="https://hieunguyen601.github.io/Random-Quote/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="randomQuote"
+                src="./starter-code/assets/images/randomQuote.png"
+                alt="Random Quote"
+              />
+            </a>
+            <div class="project-overlay">
+              <p class="project-overlay__desc">
+                Generates random inspirational quotes with smooth animations and
+                one-click copy to clipboard.
+              </p>
+              <div class="project-overlay__links">
+                <a
+                  href="https://hieunguyen601.github.io/Random-Quote/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn"
+                  >Live ↗</a
+                >
+                <a
+                  href="https://github.com/hieunguyen601/Random-Quote"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn proj-ov-btn--outline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="project__title">Random Quote</p>
+          <p class="project__tech">HTML CSS JAVASCRIPT</p>
+        </div>
+        <div class="project reveal" data-tech="html css javascript">
+          <div class="project-img-wrap">
+            <a
+              href="https://hieunguyen601.github.io/digitalbank-landing-page-project/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="bankWeb"
+                src="./starter-code/assets/images/bankWeb.png"
+                alt="Bank Web"
+              />
+            </a>
+            <div class="project-overlay">
+              <p class="project-overlay__desc">
+                Responsive digital banking landing page with modern UI and
+                smooth scroll animations.
+              </p>
+              <div class="project-overlay__links">
+                <a
+                  href="https://hieunguyen601.github.io/digitalbank-landing-page-project/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn"
+                  >Live ↗</a
+                >
+                <a
+                  href="https://github.com/hieunguyen601/digitalbank-landing-page-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="proj-ov-btn proj-ov-btn--outline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <p class="project__title">Bank Web</p>
+          <p class="project__tech">HTML CSS JAVASCRIPT</p>
+        </div>
+      </div>
+
+      <section class="spotify-section reveal">
+        <div class="spotify-inner">
+          <div class="spotify-header">
+            <h2 class="spotify-title" id="spotify-title">Recently Played</h2>
+            <div class="spotify-tabs">
+              <button
+                type="button"
+                class="spotify-tab spotify-tab--active"
+                data-tab="recent"
+              >
+                Recently Played
+              </button>
+              <button type="button" class="spotify-tab" data-tab="top">
+                Top Tracks
+              </button>
+            </div>
+          </div>
+          <div class="spotify-player visible" id="spotify-player">
+            <div class="sp-featured" id="sp-featured">
+              <p class="sp-loading">Loading...</p>
+            </div>
+            <div class="sp-list" id="sp-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <form
+        action="https://formspree.io/f/xnnndalr"
+        method="POST"
+        id="form"
+        class="contact-form reveal"
+      >
+        <div class="form-info">
+          <h1>Contact</h1>
+          <p>
+            Have a project in mind, an opportunity to share, or just want to
+            connect? Drop me a message — I read everything and reply within 24
+            hours.
+          </p>
+        </div>
+
+        <div class="input-fields">
+          <label for="name"></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="name"
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+            required
+          />
+
+          <label for="message"></label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="message"
+            required
+          ></textarea>
+          <button type="submit" class="btn-send" id="btn-send">
+            Send Message
+          </button>
+        </div>
+
+        <div class="divider2"></div>
+
+        <div class="footer">
+          <p class="footer__name">Henry Hieu Nguyen</p>
+          <p class="footer-rights">
+            &copy; <span id="year"></span> Henry. All rights reserved.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <button
+      type="button"
+      id="back-to-top"
+      class="back-to-top"
+      aria-label="Back to top"
+    >
+      &#8593;
+    </button>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

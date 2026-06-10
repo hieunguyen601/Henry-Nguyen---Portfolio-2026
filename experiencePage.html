@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./experience.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/images/henryLogo.png"
+    />
+    <title>Experience</title>
+    <script>
+      (function () {
+        const t = localStorage.getItem("theme");
+        if (t === "light")
+          document.documentElement.setAttribute("data-theme", "light");
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="exp-nav">
+      <a href="./mainPage.html" class="back-btn" id="back-btn"
+        >&#8592; Back to Home</a
+      >
+      <button
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Toggle color theme"
+      >
+        <svg
+          class="icon-sun"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg
+          class="icon-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </nav>
+
+    <main class="exp-main">
+      <div class="exp-hero">
+        <p class="exp-eyebrow">Professional Journey</p>
+        <h1 class="exp-heading">Work <span>Experience</span></h1>
+        <p class="exp-sub">
+          A timeline of roles in tech, data, and operations — building
+          real-world skills every step of the way.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item tl-item--current">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <div class="tl-badge-row">
+                  <span class="tl-badge tl-badge--tech">Internship</span>
+                  <span class="tl-current-tag">Current</span>
+                </div>
+                <h2 class="tl-role">IT Intern</h2>
+              </div>
+              <span class="tl-dates">06/2026 — Present</span>
+            </div>
+            <p class="tl-company">
+              Fort Bend County &nbsp;<span>· Richmond, TX, USA</span>
+            </p>
+            <ul class="tl-bullets">
+              <li>
+                Provided technical support for hardware, software, and network
+                issues across county departments.
+              </li>
+              <li>
+                Documented IT support tickets and internal procedures to
+                maintain accurate service records.
+              </li>
+              <li>
+                Collaborated with the IT team on system maintenance, software
+                updates, and infrastructure projects.
+              </li>
+              <li>
+                Supported staff with user account management, software
+                troubleshooting, and day-to-day technical needs.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <div class="tl-badge-row">
+                  <span class="tl-badge tl-badge--tech">Internship</span>
+                </div>
+                <h2 class="tl-role">Data Analysis Intern</h2>
+              </div>
+              <span class="tl-dates">08/2025 — 12/2025</span>
+            </div>
+            <p class="tl-company">
+              Harris County Engineering &nbsp;<span>· Houston, TX, USA</span>
+            </p>
+            <ul class="tl-bullets">
+              <li>
+                Used Cartegraph and ArcGIS to work with maps and asset data for
+                county infrastructure projects.
+              </li>
+              <li>
+                Wrote Python scripts to clean, organize, and visualize data in
+                charts and reports.
+              </li>
+              <li>
+                Worked with the IT &amp; Asset Management team to improve data
+                processes and support ongoing projects.
+              </li>
+              <li>
+                Helped check and upload data from external sources like Fugro
+                into county systems.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <div class="tl-badge-row">
+                  <span class="tl-badge tl-badge--tech">Internship</span>
+                </div>
+                <h2 class="tl-role">Marketing Intern</h2>
+              </div>
+              <span class="tl-dates">10/2023 — 05/2024</span>
+            </div>
+            <p class="tl-company">
+              Christ Rose Foundation &nbsp;<span>· Houston, TX, USA</span>
+            </p>
+            <ul class="tl-bullets">
+              <li>
+                Assisted in creating and managing social media content to
+                increase community engagement.
+              </li>
+              <li>
+                Supported marketing campaigns by conducting research and
+                analyzing audience data.
+              </li>
+              <li>
+                Designed promotional materials using Canva and other tools for
+                online and print use.
+              </li>
+              <li>
+                Collaborated with the team to plan events and outreach
+                strategies to boost foundation visibility.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div class="tl-left">
+                <div class="tl-badge-row">
+                  <span class="tl-badge tl-badge--ops">Operations</span>
+                  <span class="tl-badge tl-badge--ops">Food and Beverage</span>
+                </div>
+                <h2 class="tl-role">Supervisor</h2>
+              </div>
+              <span class="tl-dates">05/2020 — 06/2024</span>
+            </div>
+            <p class="tl-company">
+              Long Coffee &nbsp;<span>· Houston, TX, USA</span>
+            </p>
+            <ul class="tl-bullets">
+              <li>
+                Supervised daily operations, ensuring high quality service and
+                product standards.
+              </li>
+              <li>
+                Trained new employees and supported team performance during
+                high-volume hours.
+              </li>
+              <li>
+                Managed inventory, restocking, and daily store maintenance.
+              </li>
+              <li>
+                Resolved customer concerns and maintained a clean, organized
+                workspace.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = this.href;
+          document.body.classList.add("page-exit");
+          setTimeout(function () {
+            window.location.href = href;
+          }, 350);
+        });
+
+      (function () {
+        const root = document.documentElement;
+        const toggle = document.getElementById("theme-toggle");
+        toggle.addEventListener("click", function () {
+          const next =
+            root.getAttribute("data-theme") === "light" ? "dark" : "light";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./education.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/images/henryLogo.png"
+    />
+    <title>Education</title>
+    <script>
+      (function () {
+        const t = localStorage.getItem("theme");
+        if (t === "light")
+          document.documentElement.setAttribute("data-theme", "light");
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="edu-nav">
+      <a href="./mainPage.html" class="back-btn" id="back-btn"
+        >&#8592; Back to Home</a
+      >
+      <button
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Toggle color theme"
+      >
+        <svg
+          class="icon-sun"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg
+          class="icon-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </nav>
+
+    <main class="edu-main">
+      <div class="edu-hero">
+        <p class="edu-eyebrow">Academic Background</p>
+        <h1 class="edu-heading">My <span>Education</span></h1>
+        <p class="edu-sub">
+          Building a strong foundation in Computer Science through rigorous
+          coursework and hands-on academic training.
+        </p>
+      </div>
+
+      <div class="edu-cards">
+        <div class="edu-card edu-card--current">
+          <div class="edu-card-header">
+            <div class="edu-card-left">
+              <div class="edu-badge-row">
+                <span class="edu-badge edu-badge--cs">Computer Science</span>
+                <span class="edu-current-tag">In Progress</span>
+              </div>
+              <h2 class="edu-degree">Bachelor of Science</h2>
+            </div>
+            <span class="edu-dates">2024 — 2027</span>
+          </div>
+          <p class="edu-school">
+            University of Houston &nbsp;<span>· Houston, TX, USA</span>
+          </p>
+          <div class="edu-courses">
+            <p class="edu-courses-label">Relevant Coursework</p>
+            <div class="edu-tags">
+              <span class="edu-tag">Data Structures</span>
+              <span class="edu-tag">Algorithms</span>
+              <span class="edu-tag">Software Engineering</span>
+              <span class="edu-tag">Operating Systems</span>
+              <span class="edu-tag">Database Systems</span>
+              <span class="edu-tag">Discrete Mathematics</span>
+              <span class="edu-tag">Linear Algebra</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-card-header">
+            <div class="edu-card-left">
+              <div class="edu-badge-row">
+                <span class="edu-badge edu-badge--as">Computer Science</span>
+              </div>
+              <h2 class="edu-degree">Associate of Science</h2>
+            </div>
+            <span class="edu-dates">2022 — 2024</span>
+          </div>
+          <p class="edu-school">
+            Houston Community College &nbsp;<span>· Houston, TX, USA</span>
+          </p>
+          <div class="edu-courses">
+            <p class="edu-courses-label">Relevant Coursework</p>
+            <div class="edu-tags">
+              <span class="edu-tag">Introduction to Programming</span>
+              <span class="edu-tag">Computer Organization</span>
+              <span class="edu-tag">Calculus I</span>
+              <span class="edu-tag">Physics I</span>
+              <span class="edu-tag">English Composition I</span>
+              <span class="edu-tag">English Composition II</span>
+              <span class="edu-tag">Technical Writing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = this.href;
+          document.body.classList.add("page-exit");
+          setTimeout(function () {
+            window.location.href = href;
+          }, 350);
+        });
+
+      (function () {
+        const root = document.documentElement;
+        const toggle = document.getElementById("theme-toggle");
+        toggle.addEventListener("click", function () {
+          const next =
+            root.getAttribute("data-theme") === "light" ? "dark" : "light";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+        });
+      })();
+    </script>
+  </body>
+</html>
