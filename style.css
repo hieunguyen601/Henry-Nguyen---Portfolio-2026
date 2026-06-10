@@ -419,6 +419,14 @@ body.page-exit {
 .spotify-title {
   font-size: 1.8rem;
   font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sp-embed {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  display: block;
 }
 
 .spotify-tabs {
