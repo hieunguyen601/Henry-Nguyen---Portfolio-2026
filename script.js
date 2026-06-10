@@ -214,6 +214,11 @@ document.querySelectorAll(".spotify-tab").forEach((tab) => {
     if (titleEl)
       titleEl.textContent =
         tabName === "recent" ? "Recently Played" : "#1 Track This Month";
+    if (isGitHubPages) {
+      const featEl = document.getElementById("sp-featured");
+      if (featEl) featEl.innerHTML = '<p class="sp-loading">Live Spotify data is available on the <a href="https://single-page-developer-portfolio-nu.vercel.app/mainPage.html" target="_blank" rel="noopener noreferrer" style="color:#4ee1a0;text-decoration:underline">deployed version</a>.</p>';
+      return;
+    }
     loadTracks(tabName);
   });
 });
